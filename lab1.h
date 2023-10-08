@@ -12,20 +12,10 @@ typedef enum{SUCCESS=0, FAILURE=1} status;
  * fileName is c-string representing the file to read.
  * 
  */
-char* readString(char* fileName);
+char* readString(char* fileName){
+    char* location;
+    locaton = (char *) malloc(100);
+    
+}
 
-/*
- * mysteryExplode - takes a string of characters and explodes it
- * as follows:
- * 
- * A non-empty string such as "Code" is turned into "CCoCodCode".
- *
- *   Return a new string similar to the string given above.
- *
- *  Example:
- *   mysteryExplosion("Code") --> "CCoCodCode"
- *   mysteryExplosion("abc") --> "aababc"
- *   mysteryExplosion(":)") --> "::)"
- * 
- */
 char* mysteryExplode(const char* str);
