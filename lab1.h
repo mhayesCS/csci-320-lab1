@@ -25,5 +25,9 @@ char* readString(char* fileName){
 }
 
 char* mysteryExplode(const char* str) {
+    int len = strlen(str);
+    char *exploded = (char*) malloc((len*(len+1)/2)+1);
+
+
 
 }
