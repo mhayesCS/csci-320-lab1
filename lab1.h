@@ -13,9 +13,17 @@ typedef enum{SUCCESS=0, FAILURE=1} status;
  * 
  */
 char* readString(char* fileName){
-    char* location;
-    locaton = (char *) malloc(100);
+    char * location;
+    location = (char *) malloc(100);
+    FILE *fileptr;
+    fileptr = fopen(fileName, "r");
+    fgets(location, MAX_LINE_LEN, fileptr);
+    fclose(fileptr);
+    location[strcspn(location, "\n")] = '\0';
+    return location;
     
 }
 
-char* mysteryExplode(const char* str);
+char* mysteryExplode(const char* str) {
+
+}
