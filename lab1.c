@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "lab1.h"
+
+
 char* readString(char* fileName) {
     char * location;
     location = (char *) malloc(100);
